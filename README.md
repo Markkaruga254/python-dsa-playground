@@ -3,6 +3,7 @@
 A structured, practice-first learning path for building confidence in Python, data structures, algorithms, and technical interviews.
 
 **Learning hub:** [Open the static course site](https://markkaruga254.github.io/python-dsa-playground/)  
+**For GDG members:** read the [Member Getting Started Guide](docs/GETTING-STARTED.md) for Python setup, Week 1 instructions, running exercises, and getting help.  
 **Source of truth:** this repository. Lessons, quizzes, answer keys, notes, and learner starter code are maintained as Markdown and Python files.
 
 > **Course status:** the 16-week roadmap is planned; Week 1 is currently published. Upcoming weeks will appear on the learning hub as their lesson folders are added. A roadmap entry is not a claim that its lessons are already complete.
@@ -91,11 +92,12 @@ The roadmap is a sequence, not a race. Revisit a topic when the weekly review sh
 
 ## Getting started
 
-1. Read [the curriculum guide](docs/CURRICULUM.md).
-2. Open the [learning hub](https://markkaruga254.github.io/python-dsa-playground/).
-3. Start with the first published session: [Week 1 · Day 1](weeks/week-01/day-01/plan.md).
-4. Follow the session in order and attempt the quiz before viewing its answers.
-5. Record your own reasoning in `notes.md` and review your progress at the end of the week.
+1. If you are new to the repository, follow the [Member Getting Started Guide](docs/GETTING-STARTED.md) to install Python, get the exercise files, and understand how to use the tests.
+2. Read [the curriculum guide](docs/CURRICULUM.md).
+3. Open the [learning hub](https://markkaruga254.github.io/python-dsa-playground/).
+4. Start with the first published session: [Week 1 · Day 1](weeks/week-01/day-01/plan.md).
+5. Follow the session in order and attempt the quiz before viewing its answers.
+6. Record your own reasoning in `notes.md` and review your progress at the end of the week.
 
 ### Add the next session
 
