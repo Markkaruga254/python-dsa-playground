@@ -10,4 +10,4 @@ Only open this after you have attempted the quiz.
 
 4. `14`
 
-5. About n * n / 2, which we call O(n squared).
+5. Exactly n(n - 1) / 2 comparisons when every pair is checked; this grows as O(n²).
