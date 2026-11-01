@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 WEEKS = ROOT / "weeks"
-REQUIRED_SESSION_FILES = ("plan.md", "quiz.md", "answers.md", "notes.md")
+REQUIRED_SESSION_FILES = ("lesson.md", "plan.md", "quiz.md", "answers.md", "notes.md")
 NUMBERED_ITEM = re.compile(r"^\s*(\d+)[.)]\s+\S", re.MULTILINE)
 
 

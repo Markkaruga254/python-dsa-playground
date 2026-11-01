@@ -10,4 +10,4 @@ Only open this after you have attempted the quiz.
 
 4. `def square(x):` then `return x * x`
 
-5. Sort both and compare, or count the letters of each with a dictionary and compare the counts.
+5. Sort both and compare (O(n log n) time), or count character frequencies with a dictionary (O(n) expected time for a fixed/bounded alphabet).

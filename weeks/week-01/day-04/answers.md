@@ -6,8 +6,8 @@ Only open this after you have attempted the quiz.
 
 2. `[20, 30]`
 
-3. A hash function turns the key into a position, so you jump straight there. O(1) on average.
+3. The hash determines a bucket where the value can be found. Collisions still need handling; lookup is O(1) on average and can degrade in the worst case.
 
-4. O(n) time and O(n) space.
+4. O(n) expected time and O(n) auxiliary space. Each item is processed once with average O(1) dictionary operations.
 
 5. Key = the number, value = its index.
