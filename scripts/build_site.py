@@ -63,6 +63,7 @@ def build() -> None:
                 title = day_title(plan, day_num)
                 files = []
                 for filename, label in [
+                    ("lesson.md", "Lesson"),
                     ("plan.md", "Learning plan"),
                     ("quiz.md", "Quiz"),
                     ("answers.md", "Answer key"),
@@ -74,7 +75,7 @@ def build() -> None:
                         )
                 solution_path = (day_dir / "solutions").relative_to(ROOT).as_posix()
                 if (day_dir / "solutions").exists():
-                    files.append(f'<a class="file-link" href="{esc(REPO_URL + "/tree/main/" + solution_path)}">Solutions</a>')
+                    files.append(f'<a class="file-link" href="{esc(REPO_URL + "/tree/main/" + solution_path)}">Starter code</a>')
                 days.append(
                     '<article class="day-card">'
                     f'<div class="day-kicker">DAY {day_num:02d}</div>'
@@ -121,7 +122,7 @@ def build() -> None:
 <body>
 <header><div class="wrap top"><div class="brand"><div class="mark">P/DSA</div><div>Python & DSA<small>Learning path · member hub</small></div></div><a class="top-link" href="{REPO_URL}">Open repository ↗</a></div></header>
 <main class="wrap">
-<section class="hero"><div><div class="eyebrow">Learn by doing · one day at a time</div><h1>Build the skill.<br>Prove the work.</h1><p>A clear route through Python, data structures and algorithms. Choose a week, open the day's plan, complete the work, then use the quiz and answer key to check your understanding.</p><div class="hero-actions"><a class="button primary" href="#week-01">Browse available sessions ↓</a><a class="button" href="{REPO_URL}/blob/main/README.md">Read the guide ↗</a></div></div><aside class="hero-panel"><div class="eyebrow">Course map</div><div class="number">16 weeks</div><p>{total_days} daily session folders currently published in the repository. This page is a static guide; lessons, quizzes, notes and solutions live in GitHub.</p></aside></section>
+<section class="hero"><div><div class="eyebrow">Learn by doing · one day at a time</div><h1>Build the skill.<br>Prove the work.</h1><p>A clear route through Python, data structures and algorithms. Choose a week, open the day's plan, complete the work, then use the quiz and answer key to check your understanding.</p><div class="hero-actions"><a class="button primary" href="#week-01">Browse available sessions ↓</a><a class="button" href="{REPO_URL}/blob/main/README.md">Read the guide ↗</a></div></div><aside class="hero-panel"><div class="eyebrow">Course map</div><div class="number">16 weeks</div><p>{total_days} daily session folders currently published in the repository. This page is a static guide; lessons, quizzes, notes and starter code live in GitHub.</p></aside></section>
 <div class="section-top"><div><h2>Navigate the curriculum</h2><p>Jump to a week or browse the course in order.</p></div></div>
 <nav class="toc" aria-label="Jump to week">{"".join(f'<a href="#week-{n:02d}">W{n:02d}</a>' for n in range(1, 17))}</nav>
 <div class="section-top"><div><h2>Weekly roadmap</h2><p>Published sessions link directly to their source files.</p></div></div>
