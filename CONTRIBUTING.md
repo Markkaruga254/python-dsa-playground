@@ -75,9 +75,10 @@ Run these commands before submitting:
 ```bash
 python scripts/validate_curriculum.py
 python scripts/build_site.py
+python -m unittest discover -s tests -v
 ```
 
-The automated validator checks the structure and basic consistency of published lessons. It cannot judge whether an explanation is correct or a problem is pedagogically appropriate; reviewers must still read the material.
+The automated validator checks the structure and basic consistency of published lessons. The Week 1 unittest suite checks behavioral correctness of the learner implementations; it is expected to fail while starter functions still contain TODO/pass. It cannot judge whether an explanation is correct or a problem is pedagogically appropriate; reviewers must still read the material.
 
 ## Pull request expectations
 

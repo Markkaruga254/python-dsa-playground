@@ -8,6 +8,11 @@ For each problem:
 3. Run the file with Python to execute its included example assertions.
 4. Add your own edge cases before considering the problem complete.
 5. Record time and auxiliary-space complexity in your notes.
+6. Run the Week 1 behavioral tests from the repository root:
+
+   `python -m unittest discover -s tests -v`
+
+   Tests for exercises you have not implemented yet will fail; that is expected. Re-run after each implementation.
 
 Do not open an editorial before making a genuine attempt. If you use a hint or reference implementation, record the help level in review.md and later reimplement from a blank file.
 
