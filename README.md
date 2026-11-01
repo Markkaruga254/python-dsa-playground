@@ -3,7 +3,7 @@
 A structured, practice-first learning path for building confidence in Python, data structures, algorithms, and technical interviews.
 
 **Learning hub:** [Open the static course site](https://markkaruga254.github.io/python-dsa-playground/)  
-**Source of truth:** this repository. Lessons, quizzes, answer keys, notes, and reference solutions are maintained as Markdown and Python files.
+**Source of truth:** this repository. Lessons, quizzes, answer keys, notes, and learner starter code are maintained as Markdown and Python files.
 
 > **Course status:** the 16-week roadmap is planned; Week 1 is currently published. Upcoming weeks will appear on the learning hub as their lesson folders are added. A roadmap entry is not a claim that its lessons are already complete.
 
@@ -75,6 +75,7 @@ The roadmap is a sequence, not a race. Revisit a topic when the weekly review sh
 ├── docs/                   # Curriculum and assessment standards
 ├── resources/              # Curated learning references
 ├── scripts/                # Content creation and validation tools
+├── tests/                  # Standard-library behavioral tests
 ├── templates/              # Reusable session Markdown templates
 ├── weeks/
 │   └── week-XX/
@@ -113,9 +114,10 @@ Requires Python 3. No third-party packages are needed.
 ```bash
 python scripts/validate_curriculum.py
 python scripts/build_site.py
+python -m unittest discover -s tests -v
 ```
 
-The curriculum validation runs automatically for pull requests and pushes that change course content.
+The curriculum validation runs automatically for pull requests and pushes that change course content. The Week 1 behavioral tests are currently a local learner check; they are expected to fail until the TODO starter functions are implemented.
 
 ## Contributing
 
