@@ -1,0 +1,40 @@
+name: Validate curriculum
+
+on:
+  pull_request:
+    paths:
+      - "weeks/**"
+      - "templates/**"
+      - "scripts/**"
+      - "docs/**"
+      - "resources/**"
+      - "README.md"
+      - ".github/workflows/validate-curriculum.yml"
+  push:
+    branches: [main]
+    paths:
+      - "weeks/**"
+      - "templates/**"
+      - "scripts/**"
+      - "docs/**"
+      - "resources/**"
+      - "README.md"
+      - ".github/workflows/validate-curriculum.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Validate published sessions
+        run: python scripts/validate_curriculum.py
+      - name: Verify static site builds
+        run: python scripts/build_site.py
